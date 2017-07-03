@@ -1,0 +1,19 @@
+{
+
+  "description": "Returns the info stored in the page's meta tags",
+  "manifest_version": 2,
+  "name": "RevealMetaInfo",
+  "version": "1.0",
+  "homepage_url": "https://github.com/hrmeetsingh/BrowserExtensions/tree/master",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.com/", "*://*.net/*"],
+      "js": ["revealmeta.js"]
+    }
+  ]
+
+}
