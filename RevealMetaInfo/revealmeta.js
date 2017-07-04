@@ -14,4 +14,4 @@ getMetaByName = function(name) {
   return '';
 }
 
-document.body.innerHTML = document.body.innerHTML + '<div style="position: fixed;left: 0;right: 0;bottom: 0;color: #ffffff;background: #015864;z-index: 5;text-align: center;font-size: 26px;"><p>Meta description: '+getMetaByName('description')+' | Meta keywords: '+getMetaByName('keywords')+'</p></div>';
+document.body.innerHTML = document.body.innerHTML + '<div style="position: fixed;left: 5%;right: 5%;bottom: 0;color: #ffffff;background: #015864;z-index: 5;text-align: center;font-size: 26px;opacity: 0.8;border-style: dashed;"><p><u>Meta Information</u></p><p>Description: '+getMetaByName('description')+'</p><p>Keywords: '+getMetaByName('keywords')+'</p></div>';
