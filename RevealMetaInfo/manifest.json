@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.com/", "*://*.net/*"],
-      "js": ["revealmeta.js"]
+      "js": ["revealmeta.js"],
+      "run_at": "document_idle"
     }
   ]
 
