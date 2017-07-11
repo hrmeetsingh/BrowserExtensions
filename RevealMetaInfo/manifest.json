@@ -3,7 +3,7 @@
   "description": "Returns the info stored in the page's meta tags",
   "manifest_version": 2,
   "name": "RevealMetaInfo",
-  "version": "1.0",
+  "version": "1.1",
   "homepage_url": "https://github.com/hrmeetsingh/BrowserExtensions/tree/master",
   "icons": {
     "48": "icons/revealMetaInfo-logo.png"
