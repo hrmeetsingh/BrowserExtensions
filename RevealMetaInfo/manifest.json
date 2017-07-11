@@ -13,6 +13,7 @@
     {
       "matches": ["*://*.com/", "*://*.net/*"],
       "js": ["revealmeta.js"],
+      "css": ["revealmeta.css"],
       "run_at": "document_idle"
     }
   ]

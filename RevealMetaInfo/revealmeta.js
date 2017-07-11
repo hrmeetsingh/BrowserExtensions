@@ -4,7 +4,7 @@
  * but can be extended to get other meta tags by names
 */
 
-getMetaByName = function(name) {
+  getMetaByName = function(name) {
   var metas = document.getElementsByTagName('meta');
   for(var i in metas) {
     if (typeof(metas[i].name) != 'undefined' && metas[i].name.toLowerCase() == name) {
@@ -12,6 +12,24 @@ getMetaByName = function(name) {
     }   
   }
   return '';
-}
+  }
 
-document.body.innerHTML = document.body.innerHTML + '<div style="position: fixed;left: 5%;right: 5%;bottom: 0;color: #ffffff;background: #015864;z-index: 5;text-align: center;font-size: 26px;opacity: 0.8;border-style: dashed;"><p><u>Meta Information</u></p><p>Description: '+getMetaByName('description')+'</p><p>Keywords: '+getMetaByName('keywords')+'</p></div>';
+  addDivToBody = function(){
+      var newdiv = document.createElement('div');
+      var keywordstext = document.createElement('p');
+      var descriptiontext = document.createElement('p');
+      newdiv.id = 'meta-info-div';
+      newdiv.className = 'display-meta-info';
+      keywordstext.id = 'meta-keyword-text';
+      descriptiontext.id = 'meta-description-text';
+
+      keywordstext.textContent = getMetaByName('keywords');
+      descriptiontext.textContent = getMetaByName('description');
+
+      newdiv.appendChild(keywordstext);
+      newdiv.appendChild(descriptiontext);
+
+      document.getElementsByTagName('body')[0].appendChild(newdiv);
+  }
+
+document.body.onload = addDivToBody();

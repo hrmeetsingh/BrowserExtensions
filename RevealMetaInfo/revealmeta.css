@@ -1,0 +1,14 @@
+.display-meta-info {
+    position: fixed;
+    line-height: normal;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    color: #ffffff;
+    background: #015864;
+    z-index: 99;
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0.8;
+    border-style: dashed;
+  }
